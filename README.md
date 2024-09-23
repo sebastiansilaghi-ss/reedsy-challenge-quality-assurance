@@ -28,3 +28,43 @@ bookShelf-app-tests/
 ├── package.json            # Project dependencies and scripts
 ├── tsconfig.json           # TypeScript configuration
 └── playwright.config.ts    # Playwright configuration
+```
+
+## Instructions for running the tests
+
+1. **Clone the repository**  
+   Clone this repository to your local machine using Git.
+
+2. **Navigate into the cloned repository directory**  
+   Move into the project folder you just cloned.
+
+3. **Install Dependencies**  
+   Ensure you have **Node.js** installed. Then, install the project dependencies by running the following command:
+   ```bash
+   npm install
+   ```
+4. **Install Playwright Browsers**
+    ```bash
+   npx playwright install
+   ```
+5. **Run All Tests**
+    ```bash
+   npx playwright test
+   ```
+6. **Run Tests for High-Priority Bugs and a Passing Feature**
+To run failing tests for two high-priority bugs, as well as a passing test for a working feature, use:
+   ```bash
+   npx playwright test tests/e2e/bookshelf.test.ts
+   ```
+Inside the bookshelf.test.ts file, you will find explanations for why these bugs are considered high priority.
+7. **Run robust, maintainable tests**
+You can run the robust and maintainable tests by executing:
+   ```bash
+   npx playwright test tests/e2e/bookshelf_maintainable.test.ts
+   ```
+Inside the bookshelf_maintainable.test.ts file, you will find an explanation of why the passing test is valuable.
+
+
+
+
+
