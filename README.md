@@ -57,6 +57,7 @@ To run failing tests for two high-priority bugs, as well as a passing test for a
    npx playwright test tests/e2e/bookshelf.test.ts
    ```
 Inside the bookshelf.test.ts file, you will find explanations for why these bugs are considered high priority.
+
 7. **Run robust, maintainable tests**
 You can run the robust and maintainable tests by executing:
    ```bash
